@@ -15,6 +15,7 @@ router.get('/', function(req, res, next) {
     if(maths == 0)
       maths=Math.random()
     
+    res.write('Math.imul applied to '+maths+" is "+Math.imul(maths)+"\n");
     res.write('Math.log applied to '+maths+" is "+Math.log(maths)+"\n");
     res.end('Math.log10 applied to '+maths+" is "+Math.log10(maths));
  });
